@@ -1,0 +1,5 @@
+data/*
+!data/.gitkeep
+
+*.pyc
+__pycache__

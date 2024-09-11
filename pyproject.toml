@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "document-clustering"
+version = "0.1.0"
+description = ""
+authors = ["Connor (Cub) <connor@cubdigital.co.nz>"]
+readme = "README.md"
+packages = [{ include = "document-clustering" }]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+nltk = "^3.9.1"
+scikit-learn = "^1.5.1"
+pypdf = "^4.3.1"
+pypdf2 = "^3.0.1"
+matplotlib = "^3.9.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+kmeans = "document-clustering.kmeans:main"
